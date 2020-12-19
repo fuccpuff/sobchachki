@@ -9,7 +9,7 @@
   <article class="content">
 
   </article>
-  <button class="cat-button">покажи мне собчачку</button>
+  <button class="dog-button">покажи мне собчачку</button>
   <script>
     document.addEventListener('DOMContentLoaded', async function() {
         const content = document.querySelector('.content');
@@ -22,7 +22,7 @@
         image.setAttribute("src", json.message);
         content.appendChild(image);
 
-        document.querySelector('.cat-button').addEventListener('click', async function () {
+        document.querySelector('.dog-button').addEventListener('click', async function () {
 
         response = await fetch('https://dog.ceo/api/breeds/image/random');
         json = await response.json();
